@@ -4,7 +4,6 @@ class CreateCards < ActiveRecord::Migration[5.2]
       t.string :name
       t.integer :quantity
       t.integer :deck_id
-      t.integer :format_id
       t.timestamps
     end
   end

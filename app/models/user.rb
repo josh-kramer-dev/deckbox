@@ -16,4 +16,5 @@ class User < ApplicationRecord
             u.email = auth_hash['info']['email']
             u.password = SecureRandom.hex(9)
         end
+    end
 end

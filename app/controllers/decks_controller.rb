@@ -10,8 +10,10 @@ class DecksController < ApplicationController
     # GET /decks/1
     # GET /decks/1.json
     def show
+      @decks = Deck.where(:user_id = current_user.id)
       @cards = @deck.cards
       @card = Card.new # @deck.cards.build
+      render json: @decks
     end
   
     # GET /decks/new

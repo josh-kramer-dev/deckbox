@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   post '/decks/cards/new', to: 'cards#new'
 
-  root 'sessions#new'
+  root 'welcome#home'
 
   get '/login', to: 'sessions#new', as: 'login'
   post '/session', to: 'sessions#create', as: 'session'

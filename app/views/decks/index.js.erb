@@ -1,0 +1,5 @@
+var html = "<%=j(render('decks/decks')) %>"
+
+$(document).on('turbolinks:load', function(){
+  $('div.decks-index').html(html)
+})
